@@ -38,7 +38,11 @@ First make sure this container is running and listening on the URL configured in
 Now run the following command to wipe any existing webhooks in your Trello account and create the new ones:
 
 ```shell
-docker exec matterllo python scripts/helper.py --init
+$ docker exec matterllo python scripts/helper.py --init
+[2016-12-13 13:18:47,924] [INFO] delete 1 webhook
+[2016-12-13 13:18:47,925] [INFO] try to create webhook board :: sandbox
+[2016-12-13 13:18:48,903] [INFO] create webhook board :: sandbox :: <trello.webhook.WebHook object at 0x7fd81b180cd0>
+$
 ```
 
 Rerun this command everytime you update your config.
