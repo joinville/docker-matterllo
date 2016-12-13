@@ -8,7 +8,7 @@ Note: For this image, I have used the latest matterllo version ([commit from 201
 
 ```shell
 # Behind corporate proxy
-docker build -t joinville/matterllo --build-arg "https_proxy=$http_proxy" .
+docker build -t joinville/matterllo --build-arg "https_proxy=$https_proxy" .
 
 # No proxy
 docker build -t joinville/matterllo .
