@@ -1,8 +1,11 @@
 # docker-matterllo
 
-Docker image for Matterllo (Mattermost + Trello integration).
+Docker image for [Matterllo](https://github.com/Lujeni/matterllo) ([Mattermost](https://about.mattermost.com) + [Trello](https://trello.com) integration).
 
-Note: For this image, I have used the latest matterllo version ([commit from 2016-07-08](https://github.com/Lujeni/matterllo/tree/85ef4d2fb654499079a33326166146dbcd134f37)) before the project decided to use a database instead of the good old YAML file.
+* https://hub.docker.com/r/joinville/matterllo/
+* `docker pull joinville/matterllo`
+
+Note: For this image, I have used the latest Matterllo version ([commit from 2016-07-08](https://github.com/Lujeni/matterllo/tree/85ef4d2fb654499079a33326166146dbcd134f37)) before the project decided to use a database instead of the good old YAML file.
 
 ## Build
 
@@ -37,7 +40,7 @@ First make sure this container is running and listening on the URL configured in
 
 Now run the following command to wipe any existing webhooks in your Trello account and create the new ones:
 
-```shell
+```console
 $ docker exec matterllo python scripts/helper.py --init
 [2016-12-13 13:18:47,924] [INFO] delete 1 webhook
 [2016-12-13 13:18:47,925] [INFO] try to create webhook board :: sandbox
@@ -46,3 +49,9 @@ $
 ```
 
 Rerun this command everytime you update your config.
+
+## References
+
+* [Trello API webhooks documentation](https://developers.trello.com/apis/webhooks)
+* [Trello API webhooks reference](https://developers.trello.com/advanced-reference/webhook)
+* [Trello API sandbox](https://developers.trello.com/sandbox) (menu: Get Webhooks)
