@@ -27,6 +27,8 @@ docker run -d --name matterllo \
 
 Matterllo is now listening on port 8080 for Trello notification requests.
 
+> To turn on debug mode, use an additional `-e MATTERLLO_API_DEBUG=True` option to docker run.
+
 ## Webhooks setup
 
 To create the webhooks on the Trello side, you need to run a command inside the running container, because Trello will send back a request to validate the setup.
