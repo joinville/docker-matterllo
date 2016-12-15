@@ -55,3 +55,4 @@ Rerun this command everytime you update your config.
 * [Trello API webhooks documentation](https://developers.trello.com/apis/webhooks)
 * [Trello API webhooks reference](https://developers.trello.com/advanced-reference/webhook)
 * [Trello API sandbox](https://developers.trello.com/sandbox) (menu: Get Webhooks)
+* [Mattermost Incoming Webhooks](https://docs.mattermost.com/developer/webhooks-incoming.html)
